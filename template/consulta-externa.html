@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta Externa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://wallpaperaccess.com/full/2951954.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    /* Estilos CSS para o menu */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+    
+    ul.menu li {
+      float: left;
+    }
+    
+    ul.menu li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.menu li a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Estilos CSS para exibir o resultado do request */
+    .result-container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/consulta-banco">Consulta-banco</a></li>
+    <li><a href="/consulta-externa">Consulta-externa</a></li>
+    <li><a href="/login">Login</a></li>
+  </ul>
+  <center>
+ <h3>Consulte o seu personagem favorito de star wars!</h3>
+</center>
+  <div class="result-container">
+    <form method="POST" action="/consulta-externa">
+      <label>ID:</label>
+      <input type="text" name="id" value="1" required >
+      <button type="submit">Consultar</button>
+    </form>
+    
+    {% if data %}
+    <h1>Resultado da Consulta Externa</h1>
+    <pre>{{ data | safe }}</pre>
+    {% endif %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Flask
+Flask-Security
+pytz
+email_validator
+flask_httpauth
+Flask-Login
+Flask-Bootstrap4==4.0.2
+jsonify
+mysql-connector-python
+newrelic
+requests

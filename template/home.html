@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos CSS para o menu */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+    
+    ul.menu li {
+      float: left;
+    }
+    
+    ul.menu li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.menu li a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Estilos CSS para centralizar a imagem */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/consulta-banco">Consulta-banco</a></li>
+    <li><a href="/consulta-externa">Consulta-externa</a></li>
+    <li><a href="/login">Login</a></li>
+  </ul>
+  <center>
+    {% if status %}
+  <a style="color: green;">LOGIN SUCCESSFUL</a>
+  {% endif %}
+  </center>
+  
+  <div class="center">
+   
+     <img src="https://imageup.me/images/ea0ea22e-e541-41dc-b846-b2cab8d5b287.png"  width="500">
+
+  </div>
+</body>
+</html>
