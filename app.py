@@ -65,7 +65,7 @@ def consulta_banco():
                 host='curso-newrelic.cr4dgmgjfzt4.us-east-1.rds.amazonaws.com',
                 database='treinamento',
                 user='root',
-                password='Sec123123'
+                password=''
             )
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM personagens where numero_personagem = {}'.format(id))
