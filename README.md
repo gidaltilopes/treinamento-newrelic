@@ -18,5 +18,5 @@ docker run -p 80:5000 --name treinamento treinamento .
 
 ## Acess
 ```
-http:localhost
+http://localhost
 ```
