@@ -13,7 +13,7 @@ docker build -t treinamento .
 
 ## Run
 ```
-docker run -p 80:5000 --name treinamento treinamento .
+docker run -p 80:5000 --name treinamento -d treinamento 
 ``` 
 
 ## Acess
