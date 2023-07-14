@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 import requests, json, logging, os
 import mysql.connector
+import newrelic.agent
+newrelic.agent.initialize('newrelic.ini')
 
 app = Flask(__name__, template_folder='template')
 Bootstrap(app)
