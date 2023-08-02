@@ -6,7 +6,7 @@ import mysql.connector
 app = Flask(__name__, template_folder='template')
 Bootstrap(app)
 
-# Dados de autenticação
+## Dados de autenticação
 USERNAME = 'foo'
 PASSWORD = 'bar'
 
