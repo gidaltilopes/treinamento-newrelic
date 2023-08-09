@@ -16,7 +16,7 @@ pipeline {
         stage('Docker Run') {
             steps {
                 script {
-                    sh "docker run -d --name treinamento -p80:5000 treinamento ."
+                    sh "docker run -d --name treinamento -p80:5000 treinamento"
                 }   
             }
         }
