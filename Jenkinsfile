@@ -12,5 +12,6 @@ pipeline {
                     sh "docker build -t ${imageName}:${tag} -f ${dockerfile} ."
             }
         }
-    }
+     }
+  }
 }
